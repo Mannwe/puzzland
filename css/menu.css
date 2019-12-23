@@ -1,0 +1,84 @@
+/*********************************************************************************************************/
+/*		   	   				 Hoja de estilos que gestiona la pantalla de menú  							 */	
+/*********************************************************************************************************/
+
+/* Iconos de idiomas */
+.language-icons{
+	padding: 0;
+	width: 100%;
+	height: 5%;
+	display: flex;	
+	justify-content: flex-end;
+}
+
+.language-icon{
+	padding: 0.25rem;	
+	cursor: pointer;
+	opacity: 0.8;	
+}
+
+/* Cabecera del menú */
+#menu-header{
+	width: 100%;
+	height: 10%;
+	display: flex;
+}
+
+#menu-header h1{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	font-family: MainFont;
+    font-size: calc(20px + 2.5vw);
+    color: #632020;    
+}
+
+/* Cuerpo del menú */
+#menu-body{
+	width: 100%;
+	height: 85%;	
+	display: flex;
+}
+
+/* Caja que contendrá los botones del menú */
+#menu-panel{
+	width: 50%;
+    height: 85%;
+	margin: auto;
+	background-color: #FDED4D;
+    background-image: linear-gradient(#FDED4D, #FCF075, #EEF595);
+    border-radius: 5rem;
+	border: 0.25rem solid #066CFA;
+	box-shadow: 0.15rem 0.15rem #96befa;
+	display: grid;
+	grid-template-rows: 20% 20% 20%;
+	grid-template-columns: 50%;
+	align-content: center;
+	justify-content: center;
+	grid-gap: 1rem;
+}
+
+/* Los botones del menú */
+.menu-btn{
+	display: flex;
+	cursor: pointer;
+	border-radius: 5rem;
+	border: 0.25rem solid #066CFA;
+	font-family: MainFont;
+	text-align: center;
+	box-shadow: 0.15rem 0.15rem #96befa;
+}
+
+.menu-btn a{
+	font-size: calc(18px + 1.5vw);
+	color: #632020;
+	margin: auto;
+}
+
+.menu-btn:hover{
+	background-color: #86330C;
+}
+
+.menu-btn:hover a{
+	color: white;	
+}

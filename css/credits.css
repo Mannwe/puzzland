@@ -1,0 +1,79 @@
+/*********************************************************************************************************/
+/* 	   	   				 Hoja de estilos que gestiona la pantalla de créditos 							 */	
+/*********************************************************************************************************/
+
+#credits-section{
+	opacity: 0.8;
+	display: grid;
+	grid-template-rows: 1fr 4fr 1fr;
+}
+
+/* Cabecera de los créditos */
+#credits-header{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+#credits-header h1{
+	margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#credits-header h1 u{
+	font-family: NormalFont;
+    font-size: calc(14px + 1.5vw);
+    color: #632020;    
+    line-height: 1.5rem;
+}
+
+#credits-header p{
+	font-family: NormalFont;
+    font-size: calc(12px + 1.0vw);
+    color: #632020;    
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#credits-body{
+	width: 100%;
+	font-family: NormalFont;
+    font-size: calc(12px + 1.0vw);
+    color: #632020;    
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+#credits-panel{
+	display: block;
+	width: 90%;
+	height: 85%;
+	margin: auto;
+	background-color: #FDED4D;
+    background-image: linear-gradient(#FDED4D, #FCF075, #EEF595);
+    border-radius: 1rem;
+	border: 0.25rem solid #066CFA;
+	box-shadow: 0.15rem 0.15rem #96befa;
+	padding: 1rem;
+}
+
+#credits-body ul .th{
+	color: #840617;
+}
+
+#credits-footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#credits-footer h1{
+	font-family: NormalFont;
+    font-size: calc(22px + 2.5vw);
+    color: #632020;    
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
