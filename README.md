@@ -37,4 +37,4 @@ The puzzle area is divided into two sections. On the left one you will see an em
 
 I am a professional developer, and web developer as a hobby (for the moment ;-). So, any comments and improvement ideas will be welcome!
 
-Just download and enjoy!
+Enjoy!
