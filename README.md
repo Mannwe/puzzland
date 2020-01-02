@@ -1,19 +1,17 @@
-# puzzland v1.0
-
-<h2>Welcome to Puzzland</h2>
+# Welcome to Puzzland
 
 <b>Description</b>
 
-This is a jigsaw puzzle game used to train my skills, it´s not perfect. It´s not using any framework, just plain HTML, CSS and Javascript. It´s made in both English and Spanish languages (you can select the language through the top-right flags.
-
+This is a jigsaw puzzle game used to train my skills. I didn´t use any framework to build it, just plain HTML, CSS and Javascript. 
 <b>How to use deploy it</b>
 
 Just download the zip file and extract the content wherever you want. The main screen will be opened in your default web browser -you do not need a web server.
 
 <b>How to use it</b>
 
-Execute the <i>index.html</i> file by double-clicking it and a welcome screen with a simple menu will come up. There you can select whether you want to set a new game or load a saved one.
-If you select a new one, a couple of new screens come up for you to set up your new puzzle.
+Execute the <i>index.html</i> file by double-clicking it and a welcome screen with a simple menu will come up. There you can select whether you want to set a new game or load a saved one. You can also select the language through the top-right flags.
+
+If you select a new game, a couple of new screens come up for you to set up your new puzzle.
 
 <ul>
   <li>You get a slider with a number of nice pictures, where you can select one of them to play</li>
