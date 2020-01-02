@@ -11,9 +11,12 @@ If you select a new one, a couple of new screens come up for you to set up your 
 
 <ul>
   <li>You get a slider with a number of nice pictures, where you can select one of them to play</li>
-  <li>Then you can select the size of the puzzle (16/32/64 or 81 tiles </li>
+  <li>Then you can select the size of the puzzle (16/32/64 or 81 tiles)</li>
 </ul>
 
+<b>Playing it!</b>
+
+The puzzle area is divided into two sections. On the left section you will see the 
 To complete the puzzle, just drag and drop the randomly distributed tiles from the right panel to the left one, where you will find a 
 frame containing the selected image (initially hidden).
 You get some help in the top toolbar in order to make visible (faded) the image and the grid.
