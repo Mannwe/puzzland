@@ -10,8 +10,8 @@ First of all, a welcome screen with a simple menu comess up. There you can selec
 If you select a new one, a couple of new screens come up for you to set up your new puzzle.
 
 <ul>
-  <li>
-  </li>
+  <li>You get a slider with a number of nice pictures, where you can select one of them to play</li>
+  <li>Then you can select the size of the puzzle (16/32/64 or 81 tiles </li>
 </ul>
 
 To complete the puzzle, just drag and drop the randomly distributed tiles from the right panel to the left one, where you will find a 
