@@ -1,21 +1,23 @@
 # Welcome to Puzzland
 
+
 <b>Description</b>
 
 This is a jigsaw puzzle game used to train my skills. I didn´t use any framework to build it, just plain HTML, CSS and Javascript. 
+
 <b>How to use deploy it</b>
 
-Just download the zip file and extract the content wherever you want. The main screen will be opened in your default web browser -you do not need a web server.
+Just download the zip file and extract its content wherever you want. The main screen will be opened in your default web browser -you do not need a web server.
 
 <b>How to use it</b>
 
 Execute the <i>index.html</i> file by double-clicking it and a welcome screen with a simple menu will come up. There you can select whether you want to set a new game or load a saved one. You can also select the language through the top-right flags.
 
-If you select a new game, a couple of new screens come up for you to set up your new puzzle.
+If you select a new game, a couple of new screens will come up for you to set up your new puzzle.
 
 <ul>
-  <li>You get a slider with a number of nice pictures, where you can select one of them to play</li>
-  <li>Then you can select the size of the puzzle (16/25/32 or 64 tiles)</li>
+  <li>First, you will see a slider with a number of nice pictures. Just select one of them to play</li>
+  <li>Then you can select the size of the puzzle -16/25/32 or 64 tiles</li>
 </ul>
 
 If you want to load a saved game from the Local Storage, you can select the Load game option.
