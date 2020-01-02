@@ -3,7 +3,7 @@
 
 <b>Description</b>
 
-This is a jigsaw puzzle game used to train my skills. I didn´t use any framework to build it, just plain HTML, CSS and Javascript. 
+This is a jigsaw puzzle game that I developed to train my skills. I didn´t use any framework to build it, just plain HTML, CSS and Javascript. 
 
 <b>How to use deploy it</b>
 
@@ -24,15 +24,17 @@ If you want to load a saved game from the Local Storage, you can select the Load
 
 <b>Playing it!</b>
 
-The puzzle area is divided into two sections. On the left section you will see an empty frame where the puzzle will be built, and on the right one the puzzle tiles shuffled and ready to use. Just drag the tiles and drop them onto the frame. On top of the screen you will find a toolbar to help you complete it, as well as other options:
+The puzzle area is divided into two sections. On the left one you will see an empty frame where the puzzle will be built, and on the right one the puzzle tiles shuffled and ready to be used. Just drag the tiles and drop them onto the frame. On top of the screen you will find a toolbar to help you complete it, as well as other options:
 
 <ul>
   <li>A refresh button to randomly shuffle the tiles</li>
   <li>A view button to show the picture (faded)/hide it in the puzzle frame</li>
   <li>A grid button to show/hide the the grid in the puzzle frame</li>
-  <li>A save button to store the game items in the Local Storage</li>
+  <li>A save button to store the game items in the browser Local Storage</li>
 </ul>
 
-Just download and enjoy!
+<b>Final considerations</b>
 
 I am a professional developer, and web developer as a hobby (for the moment ;-). So, any comments and improvement ideas will be welcome!
+
+Just download and enjoy!
