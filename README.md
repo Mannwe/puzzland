@@ -1,12 +1,14 @@
 # puzzland v1.0
 
+<h2>Welcome to Puzzland</h2>
+
 <b>Description</b>
 
 This is a jigsaw puzzle game used to train my skills, it´s not perfect. It´s not using any framework, just plain HTML, CSS and Javascript. It´s made in both English and Spanish languages (you can select the language through the top-right flags.
 
 <b>How to use deploy it</b>
 
-Just download the zip file and extract the content wherever you want. 
+Just download the zip file and extract the content wherever you want. The main screen will be opened in your default web browser -you do not need a web server.
 
 <b>How to use it</b>
 
@@ -26,14 +28,10 @@ The puzzle area is divided into two sections. On the left section you will see a
 
 <ul>
   <li>A refresh button to randomly shuffle the tiles</li>
-  <li>A view button to show the picture (faded) in the puzzle frame</li>
-  <li>A grid button to show the the grid in the puzzle frame</li>
+  <li>A view button to show the picture (faded)/hide it in the puzzle frame</li>
+  <li>A grid button to show/hide the the grid in the puzzle frame</li>
   <li>A save button to store the game items in the Local Storage</li>
 </ul>
-
-To complete the puzzle, just drag and drop the randomly distributed tiles from the right panel to the left one, where you will find a 
-frame containing the selected image (initially hidden).
-You get some help in the top toolbar in order to make visible (faded) the image and the grid.
 
 Just download and enjoy!
 
