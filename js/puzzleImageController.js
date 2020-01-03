@@ -91,6 +91,7 @@ var puzzleImageController = {
         
         puzzleImageController.gridVisible = visible;      
 	},
+
 	showImageGrid: function(offset){
         var verticalLine = $('<img />').addClass('vertical-line').css('left', offset + '%').attr('src', 'img/vertical.png'),
             horizontalLine = $('<img />').addClass('horizontal-line').css('top', offset + '%').attr('src', 'img/horizontal.png');
@@ -101,8 +102,8 @@ var puzzleImageController = {
         $('.horizontal-line').css('opacity', 0.6);
         $('.vertical-line').css('opacity', 0.6);    
     },
-    helpImageVisibility: function(visible){
 
+    helpImageVisibility: function(visible){
         if(visible){
             $('#puzzle-image').css({
                 'background-image': puzzleImageController.puzzleImage,
@@ -110,15 +111,14 @@ var puzzleImageController = {
             });
 
             // Cambiamos el icono
-            $('#view-image i').removeClass('fa-eye-slash');
-            $('#view-image i').addClass('fa-eye');
-        }else{
-            $('#puzzle-image').css('background-image', 'none');
-            console.log('ocultamos?');
-
-            // Cambiamos el icono
             $('#view-image i').addClass('fa-eye-slash');
             $('#view-image i').removeClass('fa-eye');            
+        }else{
+            $('#puzzle-image').css('background-image', 'none');
+
+            // Cambiamos el icono
+            $('#view-image i').removeClass('fa-eye-slash');
+            $('#view-image i').addClass('fa-eye');            
         }
 
         puzzleImageController.helpImageVisible = !puzzleImageController.helpImageVisible;

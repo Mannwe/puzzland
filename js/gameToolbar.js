@@ -21,6 +21,9 @@ var gameToolbar = {
     },
     toolbarEventsHandler: function(){
         $('#view-image').bind('click',function(){
+
+            console.log('visible ' + puzzleImageController.helpImageVisible);
+
             if(puzzleImageController.helpImageVisible)
                 puzzleImageController.helpImageVisibility(puzzleImageController.IMAGE_HIDDEN);
             else

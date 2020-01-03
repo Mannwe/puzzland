@@ -134,11 +134,6 @@ Tile.prototype.assignNewTilePosition = function(tilePosition, tileId){
         }
     }
 
-    console.log('tile.xPositionInTiles ' + tile.xPositionInTiles);
-    console.log('tile.yPositionInTiles ' + tile.yPositionInTiles);
-    console.log('tile.xNewPositionInTiles ' + tile.xNewPositionInTiles);
-    console.log('tile.yNewPositionInTiles ' + tile.yNewPositionInTiles);
-
     // Si el tile está correctamente colocado en un hueco lo marcamos como tal
     /*tile.allocated = false;
     if(tile.xNewPositionInTiles == Math.floor((tile.xPositionInPixels - puzzleImageController.imageLeft) / this.width) &&
@@ -153,13 +148,19 @@ Tile.prototype.assignNewTilePosition = function(tilePosition, tileId){
 }
 
 /* Recargamos los divs físicos de cada tile tras cargar el juego guardado */
-Tile.prototype.reloadProperties = function(loadedTile, xPositionInTiles, yPositionInTiles){
+Tile.prototype.reloadProperties = function(loadedTile, xPositionInTiles, yPositionInTiles, xCurrentPositionInTiles, yCurrentPositionInTiles){
 
     this.insertDOM();
 
     // Asgignamos posición
     this.xPositionInPixels = loadedTile.x;
     this.yPositionInPixels = loadedTile.y;
+
+    this.xNewPositionInTiles = xCurrentPositionInTiles;
+    this.yNewPositionInTiles = yCurrentPositionInTiles;
+
+    console.log('xNewPositionInTiles ' + xCurrentPositionInTiles);
+    console.log('yNewPositionInTiles ' + yCurrentPositionInTiles);
 
     /* Ajustamos las coordenadas de la imagen en función de la posición del tile
        y obtenemos el fragmento de la misma que le corresponde */

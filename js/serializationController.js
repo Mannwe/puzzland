@@ -24,6 +24,9 @@ var serializationController = {
         		// Objeto JSON que serializaremos	
 	            tileObject = {};
 	            
+                if(tile.tileId == '0-0')
+                    console.log('tile.xNewPositionInTiles ' + tile.xNewPositionInTiles);
+
 	            tileObject.id = tile.tileId;
 	            tileObject.x = tile.xPositionInPixels;
 	            tileObject.y = tile.yPositionInPixels;
@@ -53,8 +56,8 @@ var serializationController = {
         localStorage.removeItem('gameData');
         localStorage.setItem('gameData', savedDataJSON);
     },
+
     loadGame: function(){
-        
         // Recuperamos el objeto JSON del local storage
         var loadedDataJSON;
         if (localStorage.getItem('gameData') == null){
@@ -89,9 +92,12 @@ var serializationController = {
         serializationController.loadScenario();
         
         // Preparamos la imagen y su rejilla
-        // Por defecto, ni la imagen de ayuda ni el grid están visibles
         puzzleImageController.helpImageVisibility(puzzleImageController.IMAGE_HIDDEN);
         puzzleImageController.imageGridVisibility(puzzleImageController.GRID_HIDDEN);
+
+        // Por defecto, ni la imagen de ayuda ni el grid quedarán como visibles
+        puzzleImageController.helpImageVisible = puzzleImageController.IMAGE_HIDDEN;
+        puzzleImageController.gridVisible = puzzleImageController.GRID_HIDDEN;
 
         // Preparamos el sistema de juego
         gameToolbar.load();
@@ -130,7 +136,7 @@ var serializationController = {
             		loadedTile = loadedTiles[index],
             		temporaryTile = new Tile(new Point(i,j));
 
-            	temporaryTile.reloadProperties(loadedTile, i, j);
+            	temporaryTile.reloadProperties(loadedTile, i, j, loadedTile.xCurrentPositionInTiles, loadedTile.yCurrentPositionInTiles);
             	temporaryTile.setupDragAndDrop();
 
             	gameController.tilesArray[i][j] = temporaryTile;	

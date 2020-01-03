@@ -174,7 +174,8 @@ var gameController = {
             		/*console.log('tile.xPositionInTiles ' + tile.xPositionInTiles);
             		console.log('tile.yPositionInTiles ' + tile.yPositionInTiles);
             		console.log('tile.xNewPositionInTiles ' + tile.xNewPositionInTiles);
-            		console.log('tile.yNewPositionInTiles ' + tile.yNewPositionInTiles);*/
+            		console.log('tile.yNewPositionInTiles ' + tile.yNewPositionInTiles);
+                    console.log('successCounter ' + successCounter);*/
         	}
         }
 
@@ -206,6 +207,10 @@ var gameController = {
         else
             puzzleComplete = '<span id="completed-puzzle">¡¡¡Puzzle Completado!!!</span>';
 
+        $('#shuffle').hide();
+        $('#view-image').hide();
+        $('#view-grid').hide();
+        $('#save').hide();
 
         shuffledTilesArea.css(
         	{'background':'none',
@@ -219,8 +224,8 @@ var gameController = {
         // Eliminamos los tiles
         gameController.removeTiles();
 
-        puzzleImageController.helpImageVisibility(puzzleImageController.IMAGE_HIDDEN);
-        puzzleImageController.imageGridVisibility(puzzleImageController.GRID_HIDDEN);
+        /*puzzleImageController.helpImageVisibility(puzzleImageController.IMAGE_HIDDEN);
+        puzzleImageController.imageGridVisibility(puzzleImageController.GRID_HIDDEN);*/
 
         // En caso de venir de una pantalla de juego completado, la deshacemos
         if(gameController.gameSucceeded){
